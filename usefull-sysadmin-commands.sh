@@ -11,3 +11,7 @@ rsync -rvz -e 'ssh -p 3433' --progress ~/backup.tar.gz sysadmin@DestinationServe
 
 # Add users to a htpasswd file
 htpasswd -c /etc/apache2/passwords username
+
+
+# Reconfigure Timezone
+dpkg-reconfigure tzdata
