@@ -18,3 +18,10 @@ dpkg-reconfigure tzdata
 
 # if working on OSX with MAMP and you want to dump ALL databases to separate files - be sure to replace the root username and password with your own.
 /Applications/MAMP/Library/bin/mysql -u root -proot  -e 'show databases' | while read dbname; do /Applications/MAMP/Library/bin/mysqldump -u root -proot --complete-insert "$dbname" > "$dbname".sql; done
+
+
+# Domain Research
+nslookup -type=txt
+nslookup -type=mx
+
+
